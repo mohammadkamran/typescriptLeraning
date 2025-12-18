@@ -11,3 +11,18 @@
     //const: use when we don't want to reassign the value to a variable. And it has block scope.
 */
 //scope===> functional scope and block scope
+
+function variablesScope() {
+  if (true) {
+    var varMessage: string = "Hello var variable";
+    console.log(varMessage + " inside block");
+    let letMessage: string = "Hello let variable";
+    console.log(letMessage + " inside block");
+    const constMessage: string = "Hello const variable";
+    console.log(constMessage + " inside block");
+  }
+  console.log(varMessage + " outside block");
+  //console.log(letMessage + " outside block"); // not accessible here because let has block scope
+  //console.log(constMessage + " outside block"); // not accessible here because const has block scope
+}
+variablesScope();
