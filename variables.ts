@@ -26,3 +26,72 @@ function variablesScope() {
   //console.log(constMessage + " outside block"); // not accessible here because const has block scope
 }
 variablesScope();
+
+//Declaration 
+var x;
+console.log("Value of var when it's only declared not initilized:" ,x);
+
+//initilization
+x =10;
+console.log("value of var after initilization: " ,x)
+
+//Declaration 
+let y;
+console.log("Value of let when it's only declared not initilized:" ,y);
+
+//initilization
+y =20;
+console.log("value of let after initilization: " ,y)
+
+//Declaration 
+// const z;
+// console.log("Value of const when it's only declared not initilized:" ,z);
+
+// Declaration & initilization at the same time
+const z =30;
+console.log("value of var after initilization: " ,z)
+
+//Redeclaration
+var city = "Bangalore";
+var city = "New Delhi"
+console.log(city)
+/*
+redeclaration is not allwoed for let and const
+let country = "India";
+let country = "US";
+console.log(country)
+
+const color = "red";
+const color = "blue";
+console.log(color)
+*/
+
+//Reassignment
+
+var age = 25;
+age = 30;
+console.log(age);
+
+let sex = "male";
+sex = "female";
+console.log(sex);
+
+const subject = "Maths";
+// subject = "Biology" //Reassignment not possible in const as the values are fixed.
+
+//Hoisting
+console.log(a); //undefined
+var a = 10;
+console.log(a)
+
+/*
+Not initialized
+console.log(b);
+let b = 10;
+console.log(b)
+
+console.log(c);
+const  c = 10;
+console.log(c)
+
+*/
