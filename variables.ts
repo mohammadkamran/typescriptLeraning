@@ -44,10 +44,12 @@ y =20;
 console.log("value of let after initilization: " ,y)
 
 //Declaration 
-// const z;
-// console.log("Value of const when it's only declared not initilized:" ,z);
+//@ts-expect-error
+ const z;
+ console.log("Value of const when it's only declared not initilized:" ,z);
 
 // Declaration & initilization at the same time
+//@ts-ignore
 const z =30;
 console.log("value of var after initilization: " ,z)
 
@@ -68,6 +70,7 @@ console.log(color)
 
 //Reassignment
 
+//@ts-ignore
 var age = 25;
 age = 30;
 console.log(age);
@@ -80,6 +83,7 @@ const subject = "Maths";
 // subject = "Biology" //Reassignment not possible in const as the values are fixed.
 
 //Hoisting
+//@ts-ignore
 console.log(a); //undefined
 var a = 10;
 console.log(a)
