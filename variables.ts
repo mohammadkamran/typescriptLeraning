@@ -85,6 +85,7 @@ const subject = "Maths";
 //Hoisting
 //@ts-ignore
 console.log(a); //undefined
+//@ts-ignore
 var a = 10;
 console.log(a)
 
