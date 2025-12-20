@@ -41,7 +41,7 @@ Touple
 */
 
 //Number Type represents both integers and floating types
-
+//@ts-ignore
 let b:number=30;
 console.log(typeof(b))
 let price = 25.5;
