@@ -79,3 +79,13 @@ for(let i5=0;i5<=30;i5++){
         console.log(i5);
     }
 }
+
+for(let i6=10;i6>=1;i6--){
+    console.log(i6);
+}
+
+let i7:number; //global variable
+for(i7=1;i7<=5;i7++){//now the i7++ makes i7=6 as here i7 without let is global variable
+    console.log(i7); //print 1,2,3,4,5
+}
+console.log(i7);//so here i7=6
