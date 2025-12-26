@@ -89,3 +89,28 @@ for(i7=1;i7<=5;i7++){//now the i7++ makes i7=6 as here i7 without let is global 
     console.log(i7); //print 1,2,3,4,5
 }
 console.log(i7);//so here i7=6
+
+//break
+
+for(let i8=0;i8<=10;i8++){
+    if(i8==7){
+        break;
+    }
+    console.log("break check", i8)
+}
+
+//continue is also called jumping
+
+for(let i9=0;i9<=10;i9++){
+    if(i9==7){
+        continue;
+    }
+    console.log("continue check",i9)
+}
+
+for(let i10=0;i10<=10;i10++){
+    if(i10==1 || i10==3 || i10==5 || i10==7 || i10==9){
+        continue;
+    }
+    console.log("continue with or operator",i10)
+}
