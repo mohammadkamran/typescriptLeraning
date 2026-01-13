@@ -19,10 +19,10 @@ display();
 function addNumbers(x: number, y: number): number {
   return x + y;
 }
-let a: number = 4;
-let b: number = 6;
-let addResult: number = addNumbers(a, b);
-console.log(`sum of ${a} and ${b} is ${addResult}`);
+let c: number = 4;
+let d: number = 6;
+let addResult: number = addNumbers(c, d);
+console.log(`sum of ${c} and ${d} is ${addResult}`);
 
 //Named functions with rest parameters or multiple params
 
