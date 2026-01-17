@@ -81,3 +81,29 @@ let reduceResult = numbers.reduce((total,element)=>{
     return(total + element);
 },0); //here 0 is default value of accumulator
 console.log("Find total using reduce methods: ", reduceResult);
+
+/*
+    some() - check if element satisfied the conditions
+    Returns true if atleast one element is satisfied, else false
+    syntax: array.some(function(currentValue,index,array){})
+ */
+//Ex1: Check array contains negative number or not
+let hasNegative = numbers.some((element)=>element<0);
+console.log("Numbers has negative:", hasNegative);
+
+//Ex2: Check array contains positive number or not
+let hasPositive = numbers.some((element)=>element>0);
+console.log("Numbers has positive:", hasPositive);
+
+/*
+    every() - checks if all elements satisfy the condition
+    Returns true if all elements are passed, else false
+    syntax: array.every(function(currentValue,index,array){})
+*/
+//Ex1: Check all numbers are even or not
+let hasEveryEven = numbers.every((element)=>element%2==0);
+console.log("Check even in array: ", hasEveryEven);
+
+//Ex2: All numbers are greater than 0 or positive or not
+let hasEveryGreaterThanZero = numbers.every((element)=>element>0);
+console.log("Check even in array: ", hasEveryGreaterThanZero);
