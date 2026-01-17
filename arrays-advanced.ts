@@ -1,5 +1,5 @@
 /* 
-    forEach(),map(),filtrer(),reduce(),some(),every()...
+    forEach()=>void,map()=>Returns Array,filtrer()=>Returns Array,reduce()=>Returns Single value,some()=>Boolean,every()=>=>Boolean
 */
 
 /* 
