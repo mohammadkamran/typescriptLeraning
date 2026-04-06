@@ -1,7 +1,7 @@
 /*
     arrow functions are also called lambda functions.
     There are 3 parts of lambda functions
-    1) Parameters: A function may optonally have paremeters
+    1) Parameters: A function may optionally have paremeters
     2) The fat arrow notation/lambda notation(=>) also called as the "goes to the operator"
     3) Statemenst: represents the functions instruction set
 
